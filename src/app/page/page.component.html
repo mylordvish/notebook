@@ -1,0 +1,29 @@
+<div class="note-container">
+  <div>
+    <button class="note-actions" *ngIf="isPageAreaDisabled" (click)="onEdit()">
+      EDIT
+    </button>
+    <button class="note-actions" *ngIf="!isPageAreaDisabled" (click)="onSave()">
+      SAVE
+    </button>
+    <button
+      class="note-actions"
+      *ngIf="!isPageAreaDisabled"
+      (click)="onCancel()"
+    >
+      CANCEL
+    </button>
+    <span class="page-text">{{ pageNumber }}</span>
+  </div>
+  <div class="note-area">
+    <textarea
+      #pageArea
+      name="pageArea"
+      [(ngModel)]="pageData"
+      cols="30"
+      rows="10"
+      [disabled]="isPageAreaDisabled"
+    >
+    </textarea>
+  </div>
+</div>

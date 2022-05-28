@@ -1,0 +1,18 @@
+html,
+body {
+  height: 100%;
+}
+button {
+  background-color: #f1f1f1;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+button:hover {
+  background-color: #A9A9A9;
+  color: #f1f1f1;
+}

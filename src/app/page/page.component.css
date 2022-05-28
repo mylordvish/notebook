@@ -1,0 +1,30 @@
+.note-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-end;
+}
+.note-area {
+  flex-grow: 2;
+  width: 100%;
+  height: 90%;
+}
+textarea {
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 1px 0 #dddddd;
+  display: block;
+  font-family: 'Marck Script', cursive;
+  font-size: 22px;
+  line-height: 50px;
+  margin: 2% auto;
+  padding: 20px;
+  resize: none;
+  width: 96%;
+  height: 88%;
+}
+.note-actions {
+  width: 70px;
+}
+.page-text {
+  margin-left: 40px;
+}
